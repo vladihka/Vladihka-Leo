@@ -1,0 +1,134 @@
+$maxWidth: 1500;
+
+@mixin adaptive_font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
+
+@mixin adaptive_padding_top($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		padding-top: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		padding-top: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_padding_bottom($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		padding-bottom: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		padding-bottom: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_padding_right($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		padding-right: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		padding-right: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_padding_left($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		padding-left: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		padding-left: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_padding($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		padding: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		padding: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_line_height($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		line-height: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		line-height: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_width($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		width: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		width: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_height($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		height: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		height: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_margin_bottom($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		margin-bottom: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		margin-bottom: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_margin_top($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		margin-top: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		margin-top: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+@mixin adaptive_margin_left($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		margin-left: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		margin-left: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
+
+@mixin adaptive_margin_right($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	@media (min-width: 1230px) {
+		margin-right: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+	@media (max-width: 1230px) {
+		margin-right: calc(#{$mobSize + px} + #{$addSize} * (100vw - 320px) /#{$maxWidth});
+	}
+}
+
